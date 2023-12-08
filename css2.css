@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #eee;
+	font-family: Arial;
+}
+
+.wrapper{
+	width: 45%;
+	padding: 2rem 4rem;
+	margin: 140px auto;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+h1{
+	font-size: 2em;
+	display: block;
+	font-weight: bold;
+}
+
+p{
+	margin: 2rem 0;
+	line-height: 22px;
+	font-weight: lighter;
+}
+
+a{
+	text-decoration: none;
+	color: purple;
+}
