@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form, .create{
+    width: 25rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li > a{
+    margin: 0 1rem;
+}
+
+@media (width < 400px){
+    form, .create{
+        width: 21rem;
+    }
+}
