@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        li {
+            cursor: pointer;
+        }
+    </style>
+
+    <div class="container">
+        <ul id="list1" class="list" onclick="transferItem('list1', 'list2')">
+            <h4>List 1</h4>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul id="list2" class="list" onclick="transferItem('list2', 'list1')">
+            <h4>List 2</h4>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+    </div>
+
+    <script>
+        function transferItem(sourceListId, destinationListId) {
+            const sourceList = document.getElementById(sourceListId)
+            const destinationList = document.getElementById(destinationListId)
+
+            sourceList.addEventListener('click', function (event) {
+                if (event.target.tagName === 'LI') {
+                    const selectedOption = event.target
+                    destinationList.appendChild(selectedOption)
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
